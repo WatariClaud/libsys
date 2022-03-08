@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lib Sys | Lendings</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div id="header">
+        <header id="header-header">
+            <h1><a href="./index.html">Lib Sys</a></h1>
+        </header>
+        <div id="container">
+            <div id="content">
+                <div class="content-content">
+                    <h3 id="user"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid" class="content-content">
+        <p id="lib-data-intro"></p>
+        <div id="button-container">
+            <button id="button_" class="button_add_entry">View books catalogue</button>
+            <button id="button__" class="button_add_entry sort-entry-button">Sort by</button>
+            <form class = "v data-sort">
+                <div id="sort-input" class = "v"></div>
+                <div id="sorter_select">
+                    <ul>
+                        <li>
+                            <input type="radio" name="sort-param" id="date" value="date">Date
+                        </li>
+                        <li>
+                            <input type="radio" name="sort-param" id="borrower" value="borrower">Borrower
+                        </li>
+                        <li>
+                            <input type="radio" name="sort-param" id="book" value="book">Book
+                        </li>
+                        <li>
+                            <button id="sort-submit">Go</button>
+                            <button id="cancel-sort-submit">Cancel</button>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <hr/>
+            <div id="shelf-data"></div>
+            <div id="f" class = "purplish hidden"></div>
+            <br/>
+            <button id = 'more-b' class = 'pry-b hidden'>Show more</button>
+            <a href ='#header'>
+                <button id = 'top' class = 'top hidden'>&#10095;</button>
+            </a>
+        </div>
+    </div>
+    <div id="modal" class="hidden">
+        <div id="modal-content">
+            <div class="loader hidden"></div>
+            <div class="modal-content_">
+                <form action="" id="form_">
+                    <div id="input-container">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+                    <div id="input-container">
+                        <label for="author">Author</label>
+                        <input type="text" name="author" id="author" required>
+                    </div>
+                    <div id="input-container">
+                        <label for="counter">Instances (number of books with this title)</label>
+                        <input type="number" name="counter" id="counter" required>
+                    </div>
+                    <div id="input-container">
+                        <input type="submit" name="submit" id="submit" value = "Submit">
+                        <input type="button" name="exit" id="exit" value = "Cancel">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/lends.js"></script>
+</body>
+</html>
